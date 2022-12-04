@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { FloatingActionButtonPageRoutingModule } from './floating-action-button-routing.module';
 
-import { HomePage } from './home.page';
+import { FloatingActionButtonPage } from './floating-action-button.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,8 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    FloatingActionButtonPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [HomePage]
+  declarations: [FloatingActionButtonPage]
 })
-export class HomePageModule {}
+export class FloatingActionButtonPageModule {}

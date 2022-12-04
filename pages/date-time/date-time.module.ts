@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { DateTimePageRoutingModule } from './date-time-routing.module';
 
-import { HomePage } from './home.page';
+import { DateTimePage } from './date-time.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,8 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    DateTimePageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [HomePage]
+  declarations: [DateTimePage]
 })
-export class HomePageModule {}
+export class DateTimePageModule {}

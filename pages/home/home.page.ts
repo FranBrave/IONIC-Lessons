@@ -44,7 +44,28 @@ export class HomePage implements OnInit {
       icon: 'checkmark-circle-outline',
       name: 'Checkbox',
       redirectTo: '/checkbox'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'DateTime',
+      redirectTo: '/date-time'
+    },
+    {
+      icon: 'car-outline',
+      name: 'FloatingActionButton',
+      redirectTo: '/fab'
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grid',
+      redirectTo: '/grid'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Infinite Scroll',
+      redirectTo: '/infinite-scroll'
     }
+  
   ];
 
   constructor() { }

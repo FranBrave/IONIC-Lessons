@@ -1,0 +1,36 @@
+<app-header title="Date Time"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Birth Data</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-label slot="start">Your birth day</ion-label>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime
+            id="datetime"
+            presentation="date"
+            [value]="birthDate.toISOString()"
+            display-format="DD MMMM YYYY"
+            (ionChange)="dateChange( $event )"
+          ></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+
+    <ion-item>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-label slot="start">Years</ion-label>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime display-format="YYYY" min="2015" max="2025">
+          </ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+  </ion-list>
+</ion-content>

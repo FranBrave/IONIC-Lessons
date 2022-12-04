@@ -1,0 +1,51 @@
+<app-header title="Floating Action Button"></app-header>
+
+<ion-content>
+  <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button
+        ><ion-icon color="facebook" name="logo-facebook"></ion-icon
+      ></ion-fab-button>
+      <ion-fab-button
+        ><ion-icon color="twitter" name="logo-twitter"></ion-icon
+      ></ion-fab-button>
+      <ion-fab-button
+        ><ion-icon color="youtube" name="logo-youtube"></ion-icon
+      ></ion-fab-button>
+    </ion-fab-list>
+
+    <ion-fab-list side="start">
+      <ion-fab-button
+        ><ion-icon color="vimeo" name="logo-vimeo"></ion-icon
+      ></ion-fab-button>
+      <ion-fab-button
+        ><ion-icon color="google" name="logo-google"></ion-icon
+      ></ion-fab-button>
+      <ion-fab-button
+        ><ion-icon color="github" name="logo-github"></ion-icon
+      ></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i = index">
+      <ion-label>Items {{ i + 1 }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

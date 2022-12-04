@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { GridPageRoutingModule } from './grid-routing.module';
 
-import { HomePage } from './home.page';
+import { GridPage } from './grid.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,8 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    GridPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [HomePage]
+  declarations: [GridPage]
 })
-export class HomePageModule {}
+export class GridPageModule {}
