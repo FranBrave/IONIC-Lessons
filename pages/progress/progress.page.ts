@@ -15,7 +15,7 @@ export class ProgressPage implements OnInit {
   }
 
   rangeChange(event: any) {
-    console.log(event.detail.value);
+    // console.log(event.detail.value);
     this.porcentaje = event.detail.value / 100
   }
 

@@ -12,16 +12,20 @@
     <ion-title color="primary">Home</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-list>
-  <ion-item
-    *ngFor="let componente of components | async"
-    [routerLink]="componente.redirectTo"
-    ><ion-icon [name]="componente.icon" slot="start" color="primary"></ion-icon
-    >{{ componente.name }}</ion-item
-  >
-</ion-list>
-
 <ion-content>
+  <ion-list>
+    <ion-item
+      *ngFor="let componente of components | async"
+      [routerLink]="componente.redirectTo"
+      ><ion-icon
+        [name]="componente.icon"
+        slot="start"
+        color="primary"
+      ></ion-icon
+      >{{ componente.name }}</ion-item
+    >
+  </ion-list>
+
   <!-- <ion-button routerLink="/alert"> Alert </ion-button>
 
   <ion-button routerLink="/action-sheet"> Action Sheet </ion-button> -->
